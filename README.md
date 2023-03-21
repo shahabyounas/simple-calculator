@@ -1,0 +1,3 @@
+# simple-calculator
+
+[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-ts-c97umh)
