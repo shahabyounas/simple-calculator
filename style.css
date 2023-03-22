@@ -7,14 +7,63 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+.screen {
+  height: 2rem;
+  text-align: end;
+  margin: auto 1rem 1rem 1rem;
+}
+
+.screen-result {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.screen-str {
+  /* color: rebeccapurple; */
 }
 
 .calc-wraper {
-  background-color: #ffebcd;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 20rem;
+  height: 35rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
 
+.keypaid-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 2rem;
+  background-color: #f8f8f8;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 
-  width: 20rem;
+.keypaid {
+  margin: 15px;
+  padding: 0.5rem;
+}
+
+.keypaid-button {
+  height: 3rem;
+  width: 3rem;
+  margin: 10px;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 8px;
+  background-color: #f8f8f8;
+  border: none;
+}
+
+.keypaid-button:nth-child(4n + 4) {
+  color: #f37979;
 }
