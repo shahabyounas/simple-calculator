@@ -52,8 +52,8 @@ function KeyPaid(props) {
       value: '+',
     },
     {
-      label: 'C',
-      value: null,
+      label: 'c',
+      value: '',
     },
     {
       label: '0',
@@ -64,10 +64,15 @@ function KeyPaid(props) {
       value: '.',
     },
     {
-      label: '=',
-      value: '=',
+      label: '-',
+      value: '-',
     },
   ];
+
+  const equalButton: { label: string; value: string } = {
+    label: '=',
+    value: '=',
+  };
 
   return (
     <div className="keypaid">
@@ -81,6 +86,12 @@ function KeyPaid(props) {
           </button>
         );
       })}
+      <button
+        className="keypaid-equal-btn"
+        onClick={() => onClickButton(equalButton)}
+      >
+        {equalButton.label}
+      </button>
     </div>
   );
 }

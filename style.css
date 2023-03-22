@@ -12,18 +12,15 @@ body {
 }
 
 .screen {
-  height: 2rem;
+  overflow-y: auto;
   text-align: end;
   margin: auto 1rem 1rem 1rem;
+  overflow-wrap: break-word;
 }
 
 .screen-result {
   font-size: 2rem;
   font-weight: bold;
-}
-
-.screen-str {
-  /* color: rebeccapurple; */
 }
 
 .calc-wraper {
@@ -66,4 +63,17 @@ body {
 
 .keypaid-button:nth-child(4n + 4) {
   color: #f37979;
+}
+
+.keypaid-equal-btn {
+  width: 100%;
+  background-color: #4285f4;
+  color: white;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+
+  margin-top: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 2px 8px;
+  border: none;
 }
